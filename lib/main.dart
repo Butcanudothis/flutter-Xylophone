@@ -3,6 +3,20 @@ import 'package:audioplayers/audio_cache.dart';
 
 void main() => runApp(XylophoneApp());
 
+FlatButton BuildKey(Color k, int b) {
+  return FlatButton(
+    onPressed: () {
+      player(b);
+    },
+    child: Card(
+      color: k,
+      child: ListTile(
+        contentPadding: EdgeInsets.symmetric(vertical: 18),
+      ),
+    ),
+  );
+}
+
 class XylophoneApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -12,83 +26,13 @@ class XylophoneApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              FlatButton(
-                onPressed: () {
-                  player(1);
-                },
-                child: Card(
-                  color: Colors.lightBlueAccent.shade50,
-                  child: ListTile(
-                    contentPadding: EdgeInsets.symmetric(vertical: 18),
-                  ),
-                ),
-              ),
-              FlatButton(
-                onPressed: () {
-                  player(2);
-                },
-                child: Card(
-                  color: Colors.lightBlue.shade50,
-                  child: ListTile(
-                    contentPadding: EdgeInsets.symmetric(vertical: 18),
-                  ),
-                ),
-              ),
-              FlatButton(
-                onPressed: () {
-                  player(3);
-                },
-                child: Card(
-                  color: Colors.lightBlue.shade100,
-                  child: ListTile(
-                    contentPadding: EdgeInsets.symmetric(vertical: 18),
-                  ),
-                ),
-              ),
-              FlatButton(
-                onPressed: () {
-                  player(4);
-                },
-                child: Card(
-                  color: Colors.lightBlueAccent.shade100,
-                  child: ListTile(
-                    contentPadding: EdgeInsets.symmetric(vertical: 18),
-                  ),
-                ),
-              ),
-              FlatButton(
-                onPressed: () {
-                  player(5);
-                },
-                child: Card(
-                  color: Colors.lightBlueAccent.shade200,
-                  child: ListTile(
-                    contentPadding: EdgeInsets.symmetric(vertical: 18),
-                  ),
-                ),
-              ),
-              FlatButton(
-                onPressed: () {
-                  player(6);
-                },
-                child: Card(
-                  color: Colors.lightBlueAccent.shade400,
-                  child: ListTile(
-                    contentPadding: EdgeInsets.symmetric(vertical: 18),
-                  ),
-                ),
-              ),
-              FlatButton(
-                onPressed: () {
-                  player(7);
-                },
-                child: Card(
-                  color: Colors.lightBlueAccent.shade700,
-                  child: ListTile(
-                    contentPadding: EdgeInsets.symmetric(vertical: 18),
-                  ),
-                ),
-              ),
+              BuildKey(Colors.lightBlueAccent.shade50, 1),
+              BuildKey(Colors.lightBlue.shade50, 2),
+              BuildKey(Colors.lightBlue.shade100, 3),
+              BuildKey(Colors.lightBlueAccent.shade100, 4),
+              BuildKey(Colors.lightBlueAccent.shade200, 5),
+              BuildKey(Colors.lightBlueAccent.shade400, 6),
+              BuildKey(Colors.lightBlueAccent.shade700, 7),
             ],
           ),
         ),
