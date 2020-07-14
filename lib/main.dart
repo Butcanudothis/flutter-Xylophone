@@ -17,7 +17,7 @@ class XylophoneApp extends StatelessWidget {
                   player(1);
                 },
                 child: Card(
-                  color: Colors.red,
+                  color: Colors.lightBlueAccent.shade50,
                   child: ListTile(
                     contentPadding: EdgeInsets.symmetric(vertical: 18),
                   ),
@@ -28,7 +28,7 @@ class XylophoneApp extends StatelessWidget {
                   player(2);
                 },
                 child: Card(
-                  color: Colors.orange,
+                  color: Colors.lightBlue.shade50,
                   child: ListTile(
                     contentPadding: EdgeInsets.symmetric(vertical: 18),
                   ),
@@ -39,7 +39,7 @@ class XylophoneApp extends StatelessWidget {
                   player(3);
                 },
                 child: Card(
-                  color: Colors.yellow,
+                  color: Colors.lightBlue.shade100,
                   child: ListTile(
                     contentPadding: EdgeInsets.symmetric(vertical: 18),
                   ),
@@ -50,7 +50,7 @@ class XylophoneApp extends StatelessWidget {
                   player(4);
                 },
                 child: Card(
-                  color: Colors.green,
+                  color: Colors.lightBlueAccent.shade100,
                   child: ListTile(
                     contentPadding: EdgeInsets.symmetric(vertical: 18),
                   ),
@@ -61,7 +61,7 @@ class XylophoneApp extends StatelessWidget {
                   player(5);
                 },
                 child: Card(
-                  color: Colors.blue,
+                  color: Colors.lightBlueAccent.shade200,
                   child: ListTile(
                     contentPadding: EdgeInsets.symmetric(vertical: 18),
                   ),
@@ -72,7 +72,7 @@ class XylophoneApp extends StatelessWidget {
                   player(6);
                 },
                 child: Card(
-                  color: Colors.indigo,
+                  color: Colors.lightBlueAccent.shade400,
                   child: ListTile(
                     contentPadding: EdgeInsets.symmetric(vertical: 18),
                   ),
@@ -83,7 +83,7 @@ class XylophoneApp extends StatelessWidget {
                   player(7);
                 },
                 child: Card(
-                  color: Colors.purple,
+                  color: Colors.lightBlueAccent.shade700,
                   child: ListTile(
                     contentPadding: EdgeInsets.symmetric(vertical: 18),
                   ),
